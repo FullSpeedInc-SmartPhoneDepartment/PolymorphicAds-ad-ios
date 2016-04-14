@@ -5,7 +5,7 @@
 //  Rectangle Movie unit class of PolymorphicAds
 //  You need to call [initAd] to initialize unit.
 //
-//  Deleges called the following order:
+//  Delegates called the following order:
 //
 //    initialization
 //      - finishInitAdFSAdRectangleMovie

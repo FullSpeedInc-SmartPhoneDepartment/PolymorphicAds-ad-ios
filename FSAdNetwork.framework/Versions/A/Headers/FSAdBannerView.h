@@ -5,7 +5,7 @@
 //  Banner unit class of PolymorphicAds
 //  You need to call [initAd] or [initWithDelegate] to initialize unit.
 //
-//  Deleges called the following order:
+//  Delegates called the following order:
 //
 //    initialization
 //      - finishInitAdFSAdBannerView
