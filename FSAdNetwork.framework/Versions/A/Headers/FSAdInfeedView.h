@@ -24,7 +24,7 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //
 //
-//  Deleges called the following order:
+//  Delegates called the following order:
 //
 //    initialization
 //      - finishInitAdFSAdInfeedView
