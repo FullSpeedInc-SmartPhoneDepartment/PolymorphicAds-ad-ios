@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Info.plist
+   PolymorphicAnalytics
+
+   Created by RN-079 on 2016/01/21.
+   Copyright (c) 2016年 fullSpeed inc. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>CFBundleName</key>
+        <string>PolymorphicAnalytics</string>
+        <key>CFBundleIdentifier</key>
+        <string>jp.co.fullspeed.FSAdAnalyticsframework</string>
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundleVersion</key>
+        <string>1</string>
+        <key>CFBundleExecutable</key>
+        <string>PolymorphicAnalytics</string>
+        <key>CFBundleGetInfoString</key>
+        <string>PolymorphicAnalytics</string>
+        <key>NSPrincipalClass</key>
+        <string></string>
+        <key>CFBundlePackageType</key>
+        <string>FMWK</string>
+        <key>CFBundleIconFile</key>
+        <string></string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>English</string>
+        <key>NSHumanReadableCopyright</key>
+        <string>Full Speed inc. All rights reserved.</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1.0.0</string>
+    </dict>
+</plist>
