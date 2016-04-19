@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8D71771-13F9-41BD-AEBB-E8A430350B97</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A5F688B679BF6EF8165B3722D4E0B95AE4A4553</key>
+		<string>git.fs-site.net:sp_dev/polymorphic_sdk_objc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SampleApp/SampleApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A5F688B679BF6EF8165B3722D4E0B95AE4A4553</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.fs-site.net:sp_dev/polymorphic_sdk_objc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A5F688B679BF6EF8165B3722D4E0B95AE4A4553</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A5F688B679BF6EF8165B3722D4E0B95AE4A4553</string>
+			<key>IDESourceControlWCCName</key>
+			<string>polymorphic_sdk_objc</string>
+		</dict>
+	</array>
+</dict>
+</plist>

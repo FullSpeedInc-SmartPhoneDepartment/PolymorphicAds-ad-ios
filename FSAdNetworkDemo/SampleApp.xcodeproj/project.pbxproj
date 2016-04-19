@@ -15,8 +15,8 @@
 		7F85C67F1C213BBC007412BE /* AdInfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85C67E1C213BBC007412BE /* AdInfeedViewController.m */; };
 		7F85C7B01C292E4C007412BE /* AdPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85C7AF1C292E4C007412BE /* AdPictureInPictureViewController.m */; };
 		7F85C8011C2BE969007412BE /* AdForcedMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85C8001C2BE969007412BE /* AdForcedMovieViewController.m */; };
-		7FAC1BE81CB4B7ED00FE0871 /* FSAdNetwork-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC1BE61CB4B7ED00FE0871 /* FSAdNetwork-Resources.bundle */; };
-		7FB34F3A1CBF9F1200B5ABE5 /* FSAdNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB34F391CBF9F1200B5ABE5 /* FSAdNetwork.framework */; };
+		7FB34F871CC604FB00B5ABE5 /* FSAdNetwork-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FB34F851CC604FB00B5ABE5 /* FSAdNetwork-Resources.bundle */; };
+		7FB34F9A1CC6191D00B5ABE5 /* FSAdNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB34F991CC6191D00B5ABE5 /* FSAdNetwork.framework */; };
 		7FC6E2D11C103C110087359A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E2D01C103C110087359A /* main.m */; };
 		7FC6E2D41C103C110087359A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E2D31C103C110087359A /* AppDelegate.m */; };
 		7FC6E2D71C103C110087359A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E2D61C103C110087359A /* ViewController.m */; };
@@ -62,8 +62,8 @@
 		7F85C7AF1C292E4C007412BE /* AdPictureInPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdPictureInPictureViewController.m; sourceTree = "<group>"; };
 		7F85C7FF1C2BE969007412BE /* AdForcedMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdForcedMovieViewController.h; sourceTree = "<group>"; };
 		7F85C8001C2BE969007412BE /* AdForcedMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdForcedMovieViewController.m; sourceTree = "<group>"; };
-		7FAC1BE61CB4B7ED00FE0871 /* FSAdNetwork-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FSAdNetwork-Resources.bundle"; sourceTree = "<group>"; };
-		7FB34F391CBF9F1200B5ABE5 /* FSAdNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdNetwork.framework; sourceTree = "<group>"; };
+		7FB34F851CC604FB00B5ABE5 /* FSAdNetwork-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FSAdNetwork-Resources.bundle"; sourceTree = "<group>"; };
+		7FB34F991CC6191D00B5ABE5 /* FSAdNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdNetwork.framework; sourceTree = "<group>"; };
 		7FC6E2CC1C103C110087359A /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC6E2D01C103C110087359A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FC6E2D21C103C110087359A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB34F3A1CBF9F1200B5ABE5 /* FSAdNetwork.framework in Frameworks */,
+				7FB34F9A1CC6191D00B5ABE5 /* FSAdNetwork.framework in Frameworks */,
 				7FC6E2EE1C1041C80087359A /* CoreTelephony.framework in Frameworks */,
 				7FD001921CA906F70095CD1E /* FSAdAnalytics.framework in Frameworks */,
 				7FC6E2EC1C1041C10087359A /* CoreLocation.framework in Frameworks */,
@@ -105,8 +105,8 @@
 		7FC6E2C31C103C110087359A = {
 			isa = PBXGroup;
 			children = (
-				7FB34F391CBF9F1200B5ABE5 /* FSAdNetwork.framework */,
-				7FAC1BE61CB4B7ED00FE0871 /* FSAdNetwork-Resources.bundle */,
+				7FB34F991CC6191D00B5ABE5 /* FSAdNetwork.framework */,
+				7FB34F851CC604FB00B5ABE5 /* FSAdNetwork-Resources.bundle */,
 				7FD001911CA906F70095CD1E /* FSAdAnalytics.framework */,
 				7FC6E2ED1C1041C80087359A /* CoreTelephony.framework */,
 				7FC6E2EB1C1041C10087359A /* CoreLocation.framework */,
@@ -230,7 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FAC1BE81CB4B7ED00FE0871 /* FSAdNetwork-Resources.bundle in Resources */,
+				7FB34F871CC604FB00B5ABE5 /* FSAdNetwork-Resources.bundle in Resources */,
 				7FC6E2DF1C103C110087359A /* LaunchScreen.storyboard in Resources */,
 				7FC6E2DC1C103C110087359A /* Assets.xcassets in Resources */,
 				7FC6E2DA1C103C110087359A /* Main.storyboard in Resources */,
