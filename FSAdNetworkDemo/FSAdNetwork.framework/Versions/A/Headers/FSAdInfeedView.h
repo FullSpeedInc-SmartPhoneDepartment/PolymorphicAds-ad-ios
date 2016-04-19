@@ -16,14 +16,15 @@
 //
 // - Image size should be set over 80px and for sure less than infeed height.
 //
-// *If we find layout collapsed, we can stop sending ad to your unit.
-//  You need to arrange layout on your own responsibility.
+// *If we find ad layout intentionally collapsed or other malicious media,
+//  ad unit would be suspended unannounced.
+//  Please arrange layout and confirm it's displayed correctly before launch app.
 //
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //
 //
-//  Deleges called the following order:
+//  Delegates called the following order:
 //
 //    initialization
 //      - finishInitAdFSAdInfeedView
@@ -81,6 +82,13 @@
  | Body                             |
  |                                  |
  ====================================
+ 
+ 
+ Also, you can set vertical position of image by setting FSInfeedImagePos.
+ - FSInfeedImagePosTop: image will be displayed top of container
+ - FSInfeedImagePosMiddle: image will be displayed middle of container
+ - FSInfeedImagePosBottom: image will be displayed bottom of container
+ 
  
  
  *Please note that infeed size and image size are arrangeable, but there are some instructions.
