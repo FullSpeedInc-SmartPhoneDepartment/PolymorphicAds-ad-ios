@@ -32,7 +32,7 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
-    [FSAdForcedMovieAdLoader sharedInstance].delegate = nil;
+//    [FSAdForcedMovieAdLoader sharedInstance].delegate = nil;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +56,9 @@
     if ([[FSAdForcedMovieAdLoader sharedInstance] isDisplayAd:AdForcedMovieAdUnitId]) {
         return YES;
     }
+    if (![[FSAdForcedMovieAdLoader sharedInstance] isReadyAd:AdForcedMovieAdUnitId]) {
+        return NO;
+    }
     BOOL result = [[FSAdForcedMovieAdLoader sharedInstance] showAd:AdForcedMovieAdUnitId];
     return result;
 }
@@ -70,6 +73,24 @@
     self.msgLabel.text = @"ad creating....";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [[FSAdForcedMovieAdLoader sharedInstance] createAd:AdForcedMovieAdUnitId];
+    });
+}
+- (IBAction)buttonInitLoadCreate:(id)sender
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.msgLabel.text = @"ad init....";
+        [FSAdForcedMovieAdLoader sharedInstance].delegate = self;
+        [[FSAdForcedMovieAdLoader sharedInstance] initAd:AdForcedMovieAdUnitId];
+    });
+}
+- (IBAction)buttonShowMovie:(id)sender
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        BOOL result = [self movieStart];
+        if (!result) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"failed to play movie" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            [alert show];
+        }
     });
 }
 
@@ -138,14 +159,14 @@
     NSLog(@"%s adUnitId:%@", __func__, adUnitId);
     self.isReady = YES;
     self.msgLabel.text = @"ready";
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        BOOL result = [self movieStart];
-        if (!result) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"failed to play movie" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-            [alert show];
-        }
-    });
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        BOOL result = [self movieStart];
+//        if (!result) {
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"failed to play movie" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+//            [alert show];
+//        }
+//    });
 }
 
 - (void)failedReadyMovieFSAdForcedMovie:(FSAdForcedMovieAdLoader *)sender adUnitId:(NSString *)adUnitId error:(FSError *)error{

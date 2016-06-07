@@ -32,6 +32,9 @@
     // test mode enabled
     [FSAdOption testModeEnable:YES];
     
+    // set main window
+    [FSAdOption setMainKeyWindow:self.window];
+    
     // send conversion by sending conversion id
 //    FSAdAnalytics *obj = [[FSAdAnalytics alloc] init];
 //    obj.delegate = self;
