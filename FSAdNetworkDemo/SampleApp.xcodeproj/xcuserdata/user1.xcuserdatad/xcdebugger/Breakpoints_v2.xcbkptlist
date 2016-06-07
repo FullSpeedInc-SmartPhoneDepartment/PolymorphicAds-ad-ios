@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562668.817212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "-failedSendAdRequestFSAdPiP:adUnitId:error:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "-finishedResponseAdRequestFSAdPiP:adUnitId:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562668.817212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "-failedResponseAdRequestFSAdPiP:adUnitId:error:"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "-finishedResponseAdRequestFSAdPiP:adUnitId:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562668.817212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "-emptyAdResponseAdRequestFSAdPiP:adUnitId:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562668.817212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "-finishedReadyMovieFSAdPiP:adUnitId:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,7 +74,87 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562668.817212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-failedReadyMovieFSAdPiP:adUnitId:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdPictureInPictureViewController.m"
+            timestampString = "486562668.817212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "-failedSendAdRequestFSAdPiP:adUnitId:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdPictureInPictureViewController.m"
+            timestampString = "486562668.817212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "-failedSendAdRequestFSAdPiP:adUnitId:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdPictureInPictureViewController.m"
+            timestampString = "486562668.817212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-failedSendAdRequestFSAdPiP:adUnitId:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdPictureInPictureViewController.m"
+            timestampString = "486562668.817212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "-failedInitAdFSAdPiP:adUnitId:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdPictureInPictureViewController.m"
+            timestampString = "486562668.817212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "163"
@@ -105,13 +169,61 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            filePath = "SampleApp/ViewController.m"
+            timestampString = "486557907.375688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "-failedInitAdFSAdPiP:adUnitId:error:"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdDoubleBannerViewController.m"
+            timestampString = "486264070.766033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-finishInitAdFSAdDoubleBannerView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Polymorphic/Polymorphic/Classes/FSAdDoubleBannerView.m"
+            timestampString = "486264405.903878"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-loadAd"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleApp/AdInfeedViewController.m"
+            timestampString = "486466637.522892"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "-finishedAdClickFSAdInfeedView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,13 +234,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562713.75225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "-failedInitAdFSAdPiP:adUnitId:error:"
-            landmarkType = "5">
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "@implementation AdPictureInPictureViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,13 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171485.693084"
+            timestampString = "486562715.92397"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "-finishInitAdFSAdPiP:adUnitId:"
-            landmarkType = "5">
+            startingLineNumber = "232"
+            endingLineNumber = "232">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -153,13 +263,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SampleApp/AdPictureInPictureViewController.m"
-            timestampString = "485171483.718835"
+            filePath = "SampleApp/AdForcedMovieViewController.m"
+            timestampString = "486966296.925904"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-finishInitAdFSAdPiP:adUnitId:"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-movieStart"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

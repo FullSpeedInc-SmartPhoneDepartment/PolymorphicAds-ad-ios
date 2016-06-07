@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="260-Q1-p1w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="260-Q1-p1w">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -451,7 +451,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAr-gz-0wy">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAr-gz-0wy">
                                 <rect key="frame" x="150" y="278" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -468,6 +468,23 @@
                                     <action selector="buttonPushed:" destination="tZx-O0-Dbn" eventType="touchUpInside" id="7my-ju-SpY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPH-9Q-wt7">
+                                <rect key="frame" x="150" y="371" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2uh-db-UFe"/>
+                                    <constraint firstAttribute="height" constant="44" id="UJA-Ew-Wk5"/>
+                                </constraints>
+                                <state key="normal" title="Init Load Create">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonInitLoadCreate:" destination="tZx-O0-Dbn" eventType="touchUpInside" id="Xts-bg-5v6"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN5-aS-q6h">
                                 <rect key="frame" x="40" y="164" width="520" height="21"/>
                                 <constraints>
@@ -477,15 +494,36 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-Xr-ecP">
+                                <rect key="frame" x="150" y="438" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KYn-1q-cEb"/>
+                                    <constraint firstAttribute="height" constant="44" id="udx-hj-F8h"/>
+                                </constraints>
+                                <state key="normal" title="show forced movie">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonShowMovie:" destination="tZx-O0-Dbn" eventType="touchUpInside" id="yXK-l8-7uo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mjB-Xr-ecP" firstAttribute="centerY" secondItem="p3V-Jg-8Zh" secondAttribute="centerY" constant="160" id="04x-MB-Lks"/>
+                            <constraint firstItem="UPH-9Q-wt7" firstAttribute="centerX" secondItem="p3V-Jg-8Zh" secondAttribute="centerX" id="0IP-73-MIr"/>
                             <constraint firstItem="WAr-gz-0wy" firstAttribute="centerY" secondItem="p3V-Jg-8Zh" secondAttribute="centerY" id="22F-Su-K5M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dN5-aS-q6h" secondAttribute="trailing" constant="20" id="MCG-CJ-uxW"/>
+                            <constraint firstItem="mjB-Xr-ecP" firstAttribute="centerX" secondItem="p3V-Jg-8Zh" secondAttribute="centerX" id="UxN-mn-qWr"/>
                             <constraint firstItem="dN5-aS-q6h" firstAttribute="leading" secondItem="p3V-Jg-8Zh" secondAttribute="leadingMargin" constant="20" id="iI0-eD-6Xf"/>
                             <constraint firstItem="WAr-gz-0wy" firstAttribute="centerX" secondItem="p3V-Jg-8Zh" secondAttribute="centerX" id="lzq-YM-fx6"/>
                             <constraint firstItem="dN5-aS-q6h" firstAttribute="top" secondItem="vaB-hS-dzN" secondAttribute="bottom" constant="100" id="mIx-gS-Rqy"/>
                             <constraint firstItem="WAr-gz-0wy" firstAttribute="top" secondItem="vaB-hS-dzN" secondAttribute="bottom" constant="8" symbolic="YES" id="t5M-78-wqS"/>
+                            <constraint firstItem="UPH-9Q-wt7" firstAttribute="centerY" secondItem="p3V-Jg-8Zh" secondAttribute="centerY" constant="93" id="xau-A3-huN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
