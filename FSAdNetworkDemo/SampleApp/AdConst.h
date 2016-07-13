@@ -14,6 +14,12 @@
 // banner ad unit id
 extern NSString * const AdBannerAdUnitId;
 
+// double banner ad unit id
+extern NSString * const AdDoubleBannerAdUnitId;
+
+// twin panel ad unit id
+extern NSString * const AdTwinPanelAdUnitId;
+
 // interstitial ad unit id
 extern NSString * const AdInterstitialAdUnitId;
 

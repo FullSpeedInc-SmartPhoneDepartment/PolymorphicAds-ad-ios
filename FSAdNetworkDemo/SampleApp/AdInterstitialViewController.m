@@ -32,7 +32,7 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
-    [FSAdInterstitialAdLoader sharedInstance].delegate = nil;
+    //[FSAdInterstitialAdLoader sharedInstance].delegate = nil;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +52,7 @@
 
 - (IBAction)buttonPushed:(id)sender {
     [[FSAdInterstitialAdLoader sharedInstance] showAd:AdInterstitialAdUnitId];
+    [[FSAdInterstitialAdLoader sharedInstance] loadAd:AdInterstitialAdUnitId];
 }
 
 #pragma mark -
