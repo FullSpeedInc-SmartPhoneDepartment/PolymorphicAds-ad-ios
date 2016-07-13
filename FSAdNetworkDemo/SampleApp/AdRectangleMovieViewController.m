@@ -9,8 +9,7 @@
 #import "AdRectangleMovieViewController.h"
 #import <FSAdNetwork/FSAdRectangleMovieView.h>
 
-@interface AdRectangleMovieViewController ()
-<FSAdRectangleMovieViewDelegate>
+@interface AdRectangleMovieViewController () <FSAdRectangleMovieViewDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *msgLabel;
 @property (nonatomic, assign) BOOL isReady;
 @property (nonatomic, strong) FSAdRectangleMovieView *movieView;
@@ -27,6 +26,16 @@
     // Do any additional setup after loading the view.
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.msgLabel.text = @"ad init....";
+        
+//        UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+//        scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1200);
+//        scrollView.backgroundColor = [UIColor blueColor];
+//        [self.view addSubview:scrollView];
+//        
+//        self.movieView = [[FSAdRectangleMovieView alloc] initWithDelegate:self];
+//        self.movieView.frame = CGRectMake(0, 800, self.view.frame.size.width, self.view.frame.size.width * 9.0 / 16.0);
+//        [scrollView addSubview:self.movieView];
+        
         // 初期化、デリゲート設定
         self.movieView = [[FSAdRectangleMovieView alloc] initWithDelegate:self];
         
@@ -84,15 +93,17 @@
 }
 
 #pragma mark - IBAction
-- (IBAction)buttonPushed:(id)sender {
+- (IBAction)buttonPushed:(id)sender
+{
     if (!self.isReady) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"now preparing" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
         return;
     }
-    self.msgLabel.text = @"ad creating....";
+    self.msgLabel.text = @"ad loading....";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.movieView createAd:AdRectangleMovieAdUnitId];
+        [self.movieView hideAd:AdRectangleMovieAdUnitId];
+        [self.movieView loadAd:AdRectangleMovieAdUnitId];
     });
 }
 

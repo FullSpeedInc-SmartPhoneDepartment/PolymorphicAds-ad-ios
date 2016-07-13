@@ -74,6 +74,8 @@
                         <segue destination="MbW-OH-Rkb" kind="show" identifier="toAdPictureInPictureView" id="DRd-Ip-CRg"/>
                         <segue destination="tZx-O0-Dbn" kind="show" identifier="toAdForcedMovieView" id="6h1-Tj-mC8"/>
                         <segue destination="8l5-6t-hgH" kind="show" identifier="toAdRectanbleMovieView" id="oXZ-ax-R8R"/>
+                        <segue destination="uDY-L2-Eve" kind="show" identifier="toAdDoubleBannerView" id="ngD-7z-TL3"/>
+                        <segue destination="nrF-ff-r16" kind="show" identifier="toAdTwinPanelView" id="OrT-YS-y5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNY-Gb-fBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-248" y="1255"/>
+            <point key="canvasLocation" x="-922" y="1279"/>
         </scene>
         <!--AD Interstitial-->
         <scene sceneID="Ful-QT-iHQ">
@@ -615,6 +617,110 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8H-CA-sS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6162" y="1311"/>
+        </scene>
+        <!--AD Double Banner-->
+        <scene sceneID="6yO-w4-IDO">
+            <objects>
+                <viewController title="AD Double Banner" id="uDY-L2-Eve" customClass="AdDoubleBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8rb-6g-YyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ILh-x7-2B9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8P-Jt-a0G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD Double Banner View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbN-nc-hQR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQ6-W4-e2R" customClass="FSAdDoubleBannerView">
+                                <rect key="frame" x="140" y="500" width="320" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JWy-pL-nM0"/>
+                                    <constraint firstAttribute="width" constant="320" id="NCl-gn-2M5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ILh-x7-2B9" firstAttribute="top" secondItem="IQ6-W4-e2R" secondAttribute="bottom" id="AcE-VX-cZd"/>
+                            <constraint firstItem="YbN-nc-hQR" firstAttribute="top" secondItem="b8P-Jt-a0G" secondAttribute="top" id="IMq-eG-D5w"/>
+                            <constraint firstItem="IQ6-W4-e2R" firstAttribute="top" secondItem="YbN-nc-hQR" secondAttribute="bottom" id="OoW-n3-see"/>
+                            <constraint firstItem="YbN-nc-hQR" firstAttribute="leading" secondItem="b8P-Jt-a0G" secondAttribute="leading" id="Rd3-Rp-SWV"/>
+                            <constraint firstAttribute="trailing" secondItem="YbN-nc-hQR" secondAttribute="trailing" id="TKB-d3-Fx8"/>
+                            <constraint firstItem="IQ6-W4-e2R" firstAttribute="centerX" secondItem="b8P-Jt-a0G" secondAttribute="centerX" id="k2N-7j-IQe"/>
+                            <constraint firstItem="ILh-x7-2B9" firstAttribute="top" secondItem="IQ6-W4-e2R" secondAttribute="bottom" id="mD5-lO-d0z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mD5-lO-d0z"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="adView" destination="IQ6-W4-e2R" id="naY-RC-UMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kL1-zY-h1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="1292"/>
+        </scene>
+        <!--Ad Twin Panel View Controller-->
+        <scene sceneID="5Jx-vK-8IU">
+            <objects>
+                <viewController id="nrF-ff-r16" customClass="AdTwinPanelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Coa-k1-PBl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ixk-tB-4gy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xuD-Nq-O1h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD Twin Panel View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-aA-lTi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fz7-4M-6ej" customClass="FSAdTwinPanelView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="ExU-I6-dCc"/>
+                                    <constraint firstAttribute="height" constant="50" id="eSb-FI-Q9I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JGb-aA-lTi" secondAttribute="trailing" id="0nt-OV-vik"/>
+                            <constraint firstItem="ixk-tB-4gy" firstAttribute="top" secondItem="Fz7-4M-6ej" secondAttribute="bottom" id="1An-ub-E6x"/>
+                            <constraint firstItem="Fz7-4M-6ej" firstAttribute="leading" secondItem="xuD-Nq-O1h" secondAttribute="leading" id="Aqp-Ac-LdU"/>
+                            <constraint firstItem="Fz7-4M-6ej" firstAttribute="top" secondItem="JGb-aA-lTi" secondAttribute="bottom" id="UfH-Ax-Hdj"/>
+                            <constraint firstItem="Fz7-4M-6ej" firstAttribute="centerX" secondItem="xuD-Nq-O1h" secondAttribute="centerX" id="X9a-Sl-km4"/>
+                            <constraint firstItem="JGb-aA-lTi" firstAttribute="top" secondItem="xuD-Nq-O1h" secondAttribute="top" id="dHj-Lp-36q"/>
+                            <constraint firstAttribute="trailing" secondItem="Fz7-4M-6ej" secondAttribute="trailing" id="ohL-j0-c89"/>
+                            <constraint firstItem="JGb-aA-lTi" firstAttribute="leading" secondItem="xuD-Nq-O1h" secondAttribute="leading" id="ubI-4a-Piu"/>
+                            <constraint firstItem="Fz7-4M-6ej" firstAttribute="top" secondItem="JGb-aA-lTi" secondAttribute="bottom" id="ums-eT-Cj2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Aqp-Ac-LdU"/>
+                                <exclude reference="ohL-j0-c89"/>
+                                <exclude reference="ums-eT-Cj2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="adView" destination="Fz7-4M-6ej" id="t8M-93-o8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q79-9R-5k7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4164" y="1309"/>
         </scene>
     </scenes>
 </document>
