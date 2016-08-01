@@ -184,4 +184,11 @@
  */
 - (BOOL)isDisplayAd:(NSString *)adUnitId;
 
+/**
+ setting movie sound is mute
+ @param adUnitId : ad unit identifier
+ @param isMute : YES is mute
+ */
+- (void)setMuteSound:(NSString*)adUnitId isMute:(BOOL)isMute;
+
 @end
