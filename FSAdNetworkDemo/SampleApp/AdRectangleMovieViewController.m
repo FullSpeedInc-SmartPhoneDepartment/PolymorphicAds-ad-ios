@@ -8,6 +8,7 @@
 
 #import "AdRectangleMovieViewController.h"
 #import <FSAdNetwork/FSAdRectangleMovieView.h>
+#import "AppDelegate.h"
 
 @interface AdRectangleMovieViewController () <FSAdRectangleMovieViewDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *msgLabel;
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIView *adView;
 
 @end
+
 
 @implementation AdRectangleMovieViewController
 
@@ -27,14 +29,18 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.msgLabel.text = @"ad init....";
         
-//        UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-//        scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1200);
+//        CGRect myFrame = self.view.frame;
+//        myFrame.origin.y += 80;
+//        myFrame.size.height -= 80;
+//        UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:myFrame];
+//        scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 2000);
 //        scrollView.backgroundColor = [UIColor blueColor];
 //        [self.view addSubview:scrollView];
 //        
 //        self.movieView = [[FSAdRectangleMovieView alloc] initWithDelegate:self];
 //        self.movieView.frame = CGRectMake(0, 800, self.view.frame.size.width, self.view.frame.size.width * 9.0 / 16.0);
 //        [scrollView addSubview:self.movieView];
+        
         
         // 初期化、デリゲート設定
         self.movieView = [[FSAdRectangleMovieView alloc] initWithDelegate:self];
@@ -43,16 +49,19 @@
         self.movieView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width * 9.0 / 16.0);
         [self.adView addSubview:self.movieView];
         
+        
         // 広告初期化
         [self.movieView initAd:AdRectangleMovieAdUnitId];
+        
     });
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    NSLog(@"%s", __func__);
     [super viewWillDisappear:animated];
     
-    [self.movieView hideAd:AdRectangleMovieAdUnitId];
+    //[self.movieView hideAd:AdRectangleMovieAdUnitId];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -95,16 +104,19 @@
 #pragma mark - IBAction
 - (IBAction)buttonPushed:(id)sender
 {
+    /*
     if (!self.isReady) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"now preparing" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
         return;
     }
+     */
     self.msgLabel.text = @"ad loading....";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.movieView hideAd:AdRectangleMovieAdUnitId];
         [self.movieView loadAd:AdRectangleMovieAdUnitId];
     });
+    
 }
 
 #pragma mark -
