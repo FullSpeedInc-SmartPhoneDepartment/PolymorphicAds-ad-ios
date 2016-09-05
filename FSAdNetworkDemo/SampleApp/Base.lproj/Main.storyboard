@@ -76,6 +76,7 @@
                         <segue destination="8l5-6t-hgH" kind="show" identifier="toAdRectanbleMovieView" id="oXZ-ax-R8R"/>
                         <segue destination="uDY-L2-Eve" kind="show" identifier="toAdDoubleBannerView" id="ngD-7z-TL3"/>
                         <segue destination="nrF-ff-r16" kind="show" identifier="toAdTwinPanelView" id="OrT-YS-y5o"/>
+                        <segue destination="RFD-O2-3Al" kind="show" identifier="toAdRectangleBannerView" id="jyc-zO-4zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -721,6 +722,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q79-9R-5k7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4164" y="1309"/>
+        </scene>
+        <!--AD Rectangle Banner-->
+        <scene sceneID="4vN-Sv-Hpb">
+            <objects>
+                <viewController title="AD Rectangle Banner" id="RFD-O2-3Al" customClass="AdRectangleBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Dp-8v-SAq"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ml-bZ-bq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zrl-Xg-48r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD Rectangle Banner View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T2-5M-mHi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfo-06-hUE" customClass="FSAdRectangleBannerView">
+                                <rect key="frame" x="150" y="350" width="300" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="065-tV-SQW"/>
+                                    <constraint firstAttribute="width" constant="300" id="DDk-qS-hWS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Ml-bZ-bq8" firstAttribute="top" secondItem="kfo-06-hUE" secondAttribute="bottom" id="LQA-2E-dQF"/>
+                            <constraint firstItem="7T2-5M-mHi" firstAttribute="leading" secondItem="Zrl-Xg-48r" secondAttribute="leading" id="OpZ-Pf-twP"/>
+                            <constraint firstItem="5Ml-bZ-bq8" firstAttribute="top" secondItem="kfo-06-hUE" secondAttribute="bottom" id="SOH-QU-6sg"/>
+                            <constraint firstItem="7T2-5M-mHi" firstAttribute="top" secondItem="Zrl-Xg-48r" secondAttribute="top" id="SqC-OS-XR8"/>
+                            <constraint firstItem="kfo-06-hUE" firstAttribute="top" secondItem="7T2-5M-mHi" secondAttribute="bottom" id="d7O-it-d2v"/>
+                            <constraint firstItem="kfo-06-hUE" firstAttribute="centerX" secondItem="Zrl-Xg-48r" secondAttribute="centerX" id="iya-xs-6DU"/>
+                            <constraint firstAttribute="trailing" secondItem="7T2-5M-mHi" secondAttribute="trailing" id="rzU-cj-Onr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LQA-2E-dQF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="adView" destination="kfo-06-hUE" id="eqq-RS-7Do"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OB-FY-fhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="1982"/>
         </scene>
     </scenes>
 </document>

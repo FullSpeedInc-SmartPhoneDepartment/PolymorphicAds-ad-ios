@@ -31,6 +31,7 @@ typedef NS_ENUM(NSInteger, FS_ERRCD_TYPE) {
 #define FS_ERR_MSG_12 @"no ad infomation"
 #define FS_ERR_MSG_13 @"incorrect twin panel size"
 #define FS_ERR_MSG_14 @"incorrect double banner size"
+#define FS_ERR_MSG_15 @"incorrect rectangle banner size"
 
 @interface FSError : NSObject
 

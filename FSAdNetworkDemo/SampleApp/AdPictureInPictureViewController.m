@@ -228,4 +228,8 @@
 - (void)hideAdViewFSAdPiP:(FSAdPiPAdLoader *)adView adUnitId:(NSString *)adUnitId {
     NSLog(@"%s adUnitId:%@", __func__, adUnitId);    
 }
+
+- (void)expandedAdViewFSAdPiP:(FSAdPiPAdLoader *)adView adUnitId:(NSString *)adUnitId{
+    NSLog(@"%s adUnitId:%@", __func__, adUnitId);
+}
 @end

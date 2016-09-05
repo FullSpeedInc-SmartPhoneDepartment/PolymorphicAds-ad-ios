@@ -20,6 +20,9 @@ extern NSString * const AdDoubleBannerAdUnitId;
 // twin panel ad unit id
 extern NSString * const AdTwinPanelAdUnitId;
 
+// rectangle banner ad unit id
+extern NSString * const AdRectangleBannerAdUnitId;
+
 // interstitial ad unit id
 extern NSString * const AdInterstitialAdUnitId;
 
