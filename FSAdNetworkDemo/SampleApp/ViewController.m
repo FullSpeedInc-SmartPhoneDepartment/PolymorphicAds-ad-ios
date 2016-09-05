@@ -12,6 +12,7 @@ typedef NS_ENUM(NSInteger, TABLE_TYPE) {
     TABLE_TYPE_AD_BANNDER,
     TABLE_TYPE_AD_DOUBLE_BANNDER,
     TABLE_TYPE_AD_TWIN_PANEL,
+    TABLE_TYPE_AD_RECTANGLE_BANNER,
     TABLE_TYPE_AD_INTERSTITIAL,
     TABLE_TYPE_AD_INFEED,
     TABLE_TYPE_AD_POPUP,
@@ -65,6 +66,9 @@ typedef NS_ENUM(NSInteger, TABLE_TYPE) {
         case TABLE_TYPE_AD_TWIN_PANEL:
             cell.textLabel.text = @"AD Twin Panel sample";
             break;
+        case TABLE_TYPE_AD_RECTANGLE_BANNER:
+            cell.textLabel.text = @"AD Rectangle Banner sample";
+            break;
         case TABLE_TYPE_AD_INTERSTITIAL:
             cell.textLabel.text = @"AD Interstitial sample";
             break;
@@ -109,6 +113,9 @@ typedef NS_ENUM(NSInteger, TABLE_TYPE) {
             break;
         case TABLE_TYPE_AD_TWIN_PANEL:
             [self performSegueWithIdentifier:@"toAdTwinPanelView" sender:self];
+            break;
+        case TABLE_TYPE_AD_RECTANGLE_BANNER:
+            [self performSegueWithIdentifier:@"toAdRectangleBannerView" sender:self];
             break;
         case TABLE_TYPE_AD_INTERSTITIAL:
             [self performSegueWithIdentifier:@"toAdInterstitialView" sender:self];

@@ -61,7 +61,8 @@
     NSLog(@"%s", __func__);
     [super viewWillDisappear:animated];
     
-    //[self.movieView hideAd:AdRectangleMovieAdUnitId];
+    [self.movieView hideAd:AdRectangleMovieAdUnitId];
+//    [self.movieView removeFromSuperview];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

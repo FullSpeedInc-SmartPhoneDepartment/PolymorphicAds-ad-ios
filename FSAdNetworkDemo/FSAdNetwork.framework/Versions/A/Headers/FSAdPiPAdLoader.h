@@ -36,6 +36,10 @@
 //    -> closed
 //      - hideAdViewFSAdPiP
 //
+//    (Added from Ver.2.1.0)
+//    -> small movie tapped and expanded fullscreen
+//      - expandedAdViewFSAdPiP
+//
 //  Created by RN-079 on 2015/12/22.
 //  Copyright © 2016 fullSpeed inc. All rights reserved.
 //
@@ -138,6 +142,11 @@ typedef NS_ENUM(NSInteger, FSAdPiPPositionType) {
  hidden ad view
  */
 - (void)hideAdViewFSAdPiP:(FSAdPiPAdLoader *)adView adUnitId:(NSString *)adUnitId;
+
+/**
+ movie expanded
+ */
+- (void)expandedAdViewFSAdPiP:(FSAdPiPAdLoader *)adView adUnitId:(NSString *)adUnitId;
 
 @end
 

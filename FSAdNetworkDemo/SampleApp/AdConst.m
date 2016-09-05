@@ -19,6 +19,9 @@ NSString * const AdDoubleBannerAdUnitId = @"eba6b7a036fdf970";
 // twin panel ad unit id
 NSString * const AdTwinPanelAdUnitId = @"d8fd04e45351b930";
 
+// rectangle banner ad unit id
+NSString * const AdRectangleBannerAdUnitId = @"4173d2df883041d0";
+
 // interstitial ad unit id
 NSString * const AdInterstitialAdUnitId = @"79af9ceba9873a48";
 
