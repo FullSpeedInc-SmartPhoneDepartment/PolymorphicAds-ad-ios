@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F055BF91D7CFF630082BD23 /* FSAdNetwork-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F055BF71D7CFF630082BD23 /* FSAdNetwork-Resources.bundle */; };
-		7F055BFA1D7CFF630082BD23 /* FSAdNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F055BF81D7CFF630082BD23 /* FSAdNetwork.framework */; };
 		7F09306D1D00473300BD8A10 /* AdDoubleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F09306A1D00473300BD8A10 /* AdDoubleBannerViewController.m */; };
 		7F09306E1D00473300BD8A10 /* AdTwinPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F09306C1D00473300BD8A10 /* AdTwinPanelViewController.m */; };
 		7F22C18E1C87DD6D00186313 /* AdConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C18D1C87DD6D00186313 /* AdConst.m */; };
@@ -43,6 +41,8 @@
 		7FD001171CA2815D0095CD1E /* AdRectangleMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD001161CA2815D0095CD1E /* AdRectangleMovieViewController.m */; };
 		7FD001921CA906F70095CD1E /* FSAdAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD001911CA906F70095CD1E /* FSAdAnalytics.framework */; };
 		7FD2180C1D22445D00533572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2180B1D22445D00533572 /* libz.tbd */; };
+		7FDA79731DB7473000487F49 /* FSAdNetwork-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FDA79711DB7473000487F49 /* FSAdNetwork-Resources.bundle */; };
+		7FDA79741DB7473000487F49 /* FSAdNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDA79721DB7473000487F49 /* FSAdNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,8 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7F055BF71D7CFF630082BD23 /* FSAdNetwork-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FSAdNetwork-Resources.bundle"; sourceTree = "<group>"; };
-		7F055BF81D7CFF630082BD23 /* FSAdNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdNetwork.framework; sourceTree = "<group>"; };
 		7F0930691D00473300BD8A10 /* AdDoubleBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDoubleBannerViewController.h; sourceTree = "<group>"; };
 		7F09306A1D00473300BD8A10 /* AdDoubleBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDoubleBannerViewController.m; sourceTree = "<group>"; };
 		7F09306B1D00473300BD8A10 /* AdTwinPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdTwinPanelViewController.h; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		7FD001161CA2815D0095CD1E /* AdRectangleMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdRectangleMovieViewController.m; sourceTree = "<group>"; };
 		7FD001911CA906F70095CD1E /* FSAdAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdAnalytics.framework; sourceTree = "<group>"; };
 		7FD2180B1D22445D00533572 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7FDA79711DB7473000487F49 /* FSAdNetwork-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FSAdNetwork-Resources.bundle"; sourceTree = "<group>"; };
+		7FDA79721DB7473000487F49 /* FSAdNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdNetwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				7F8260181CFFC3450000E145 /* StoreKit.framework in Frameworks */,
 				7F8260161CFFC33D0000E145 /* WebKit.framework in Frameworks */,
 				7F8260121CFFC31F0000E145 /* AdSupport.framework in Frameworks */,
-				7F055BFA1D7CFF630082BD23 /* FSAdNetwork.framework in Frameworks */,
+				7FDA79741DB7473000487F49 /* FSAdNetwork.framework in Frameworks */,
 				7FC6E2EE1C1041C80087359A /* CoreTelephony.framework in Frameworks */,
 				7FD001921CA906F70095CD1E /* FSAdAnalytics.framework in Frameworks */,
 				7FC6E2EC1C1041C10087359A /* CoreLocation.framework in Frameworks */,
@@ -145,8 +145,8 @@
 		7F8260251CFFC3C40000E145 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				7F055BF71D7CFF630082BD23 /* FSAdNetwork-Resources.bundle */,
-				7F055BF81D7CFF630082BD23 /* FSAdNetwork.framework */,
+				7FDA79711DB7473000487F49 /* FSAdNetwork-Resources.bundle */,
+				7FDA79721DB7473000487F49 /* FSAdNetwork.framework */,
 				7F8260231CFFC3940000E145 /* libz.1.2.5.tbd */,
 				7F8260211CFFC3840000E145 /* EventKitUI.framework */,
 				7F82601F1CFFC37C0000E145 /* EventKit.framework */,
@@ -295,7 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F055BF91D7CFF630082BD23 /* FSAdNetwork-Resources.bundle in Resources */,
+				7FDA79731DB7473000487F49 /* FSAdNetwork-Resources.bundle in Resources */,
 				7FC6E2DF1C103C110087359A /* LaunchScreen.storyboard in Resources */,
 				7FC6E2DC1C103C110087359A /* Assets.xcassets in Resources */,
 				7FC6E2DA1C103C110087359A /* Main.storyboard in Resources */,

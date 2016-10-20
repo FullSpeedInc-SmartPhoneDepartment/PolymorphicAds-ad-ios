@@ -24,10 +24,10 @@
     // Override point for customization after application launch.
     
     // analytics log enabled
-    [FSAnalyticsOption debugLogEnable:YES];
+    [FSAnalyticsOption debugLogEnable:NO];
     
     // ad unit log enabled
-    [FSAdOption debugLogEnable:YES];
+    [FSAdOption debugLogEnable:NO];
     
     // test mode enabled
     [FSAdOption testModeEnable:YES];
