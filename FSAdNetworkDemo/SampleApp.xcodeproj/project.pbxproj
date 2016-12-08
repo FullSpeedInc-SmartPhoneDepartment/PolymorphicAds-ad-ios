@@ -17,7 +17,6 @@
 		7F7500741D498F0E00EBCAD7 /* AdRectangleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7500731D498F0E00EBCAD7 /* AdRectangleBannerViewController.m */; };
 		7F8260121CFFC31F0000E145 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8260111CFFC31F0000E145 /* AdSupport.framework */; };
 		7F8260161CFFC33D0000E145 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8260151CFFC33D0000E145 /* WebKit.framework */; };
-		7F8260181CFFC3450000E145 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8260171CFFC3450000E145 /* StoreKit.framework */; };
 		7F82601A1CFFC34E0000E145 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8260191CFFC34E0000E145 /* Social.framework */; };
 		7F82601C1CFFC3590000E145 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F82601B1CFFC3590000E145 /* MediaPlayer.framework */; };
 		7F82601E1CFFC3720000E145 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F82601D1CFFC3720000E145 /* MessageUI.framework */; };
@@ -78,7 +77,6 @@
 		7F8260111CFFC31F0000E145 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7F8260131CFFC3280000E145 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7F8260151CFFC33D0000E145 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		7F8260171CFFC3450000E145 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7F8260191CFFC34E0000E145 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		7F82601B1CFFC3590000E145 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		7F82601D1CFFC3720000E145 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -128,7 +126,6 @@
 				7F82601E1CFFC3720000E145 /* MessageUI.framework in Frameworks */,
 				7F82601C1CFFC3590000E145 /* MediaPlayer.framework in Frameworks */,
 				7F82601A1CFFC34E0000E145 /* Social.framework in Frameworks */,
-				7F8260181CFFC3450000E145 /* StoreKit.framework in Frameworks */,
 				7F8260161CFFC33D0000E145 /* WebKit.framework in Frameworks */,
 				7F8260121CFFC31F0000E145 /* AdSupport.framework in Frameworks */,
 				7FF602281DD47E80003C9694 /* FSAdNetwork.framework in Frameworks */,
@@ -153,7 +150,6 @@
 				7F82601D1CFFC3720000E145 /* MessageUI.framework */,
 				7F82601B1CFFC3590000E145 /* MediaPlayer.framework */,
 				7F8260191CFFC34E0000E145 /* Social.framework */,
-				7F8260171CFFC3450000E145 /* StoreKit.framework */,
 				7F8260151CFFC33D0000E145 /* WebKit.framework */,
 				7F8260131CFFC3280000E145 /* AudioToolbox.framework */,
 				7F8260111CFFC31F0000E145 /* AdSupport.framework */,
@@ -269,6 +265,11 @@
 					7FC6E2CB1C103C110087359A = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 2RW8Q6Y7W7;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -438,6 +439,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2RW8Q6Y7W7;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +473,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2RW8Q6Y7W7;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
