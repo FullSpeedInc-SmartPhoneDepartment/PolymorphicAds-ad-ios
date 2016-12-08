@@ -191,4 +191,16 @@
  */
 - (void)setMuteSound:(NSString*)adUnitId isMute:(BOOL)isMute;
 
+/**
+ stop rectangle movie
+ returns NO if movie already stopped
+ */
+-(BOOL) stopMovie:(NSString *)adUnitId;
+
+/**
+ resume rectangle movie
+ returns NO if movie already played
+ */
+-(BOOL) resumeMovie:(NSString *)adUnitId;
+
 @end
