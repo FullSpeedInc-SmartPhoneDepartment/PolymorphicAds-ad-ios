@@ -28,4 +28,11 @@
  */
 + (void)setMainKeyWindow:(UIWindow*)window;
 
+/**
+ location switch
+ recommended NOT to use
+ default value is YES
+ */
++ (void)locationServiceEnable:(BOOL)enable;
+
 @end
