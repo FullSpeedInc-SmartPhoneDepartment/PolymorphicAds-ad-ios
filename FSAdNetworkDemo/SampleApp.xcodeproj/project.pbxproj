@@ -26,6 +26,8 @@
 		7F85C67F1C213BBC007412BE /* AdInfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85C67E1C213BBC007412BE /* AdInfeedViewController.m */; };
 		7F85C7B01C292E4C007412BE /* AdPictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85C7AF1C292E4C007412BE /* AdPictureInPictureViewController.m */; };
 		7F85C8011C2BE969007412BE /* AdForcedMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85C8001C2BE969007412BE /* AdForcedMovieViewController.m */; };
+		7FAD83CB1E7A6E6700898DB7 /* FSAdNetwork-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD83C91E7A6E6700898DB7 /* FSAdNetwork-Resources.bundle */; };
+		7FAD83CC1E7A6E6700898DB7 /* FSAdNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAD83CA1E7A6E6700898DB7 /* FSAdNetwork.framework */; };
 		7FC6E2D11C103C110087359A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E2D01C103C110087359A /* main.m */; };
 		7FC6E2D41C103C110087359A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E2D31C103C110087359A /* AppDelegate.m */; };
 		7FC6E2D71C103C110087359A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E2D61C103C110087359A /* ViewController.m */; };
@@ -40,8 +42,6 @@
 		7FD001171CA2815D0095CD1E /* AdRectangleMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD001161CA2815D0095CD1E /* AdRectangleMovieViewController.m */; };
 		7FD001921CA906F70095CD1E /* FSAdAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD001911CA906F70095CD1E /* FSAdAnalytics.framework */; };
 		7FD2180C1D22445D00533572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2180B1D22445D00533572 /* libz.tbd */; };
-		7FE3D4B91E7A64A900C3E4B6 /* FSAdNetwork-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FE3D4B71E7A64A900C3E4B6 /* FSAdNetwork-Resources.bundle */; };
-		7FE3D4BA1E7A64A900C3E4B6 /* FSAdNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE3D4B81E7A64A900C3E4B6 /* FSAdNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +89,8 @@
 		7F85C7AF1C292E4C007412BE /* AdPictureInPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdPictureInPictureViewController.m; sourceTree = "<group>"; };
 		7F85C7FF1C2BE969007412BE /* AdForcedMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdForcedMovieViewController.h; sourceTree = "<group>"; };
 		7F85C8001C2BE969007412BE /* AdForcedMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdForcedMovieViewController.m; sourceTree = "<group>"; };
+		7FAD83C91E7A6E6700898DB7 /* FSAdNetwork-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FSAdNetwork-Resources.bundle"; sourceTree = "<group>"; };
+		7FAD83CA1E7A6E6700898DB7 /* FSAdNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdNetwork.framework; sourceTree = "<group>"; };
 		7FC6E2CC1C103C110087359A /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC6E2D01C103C110087359A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FC6E2D21C103C110087359A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,8 +112,6 @@
 		7FD001161CA2815D0095CD1E /* AdRectangleMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdRectangleMovieViewController.m; sourceTree = "<group>"; };
 		7FD001911CA906F70095CD1E /* FSAdAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdAnalytics.framework; sourceTree = "<group>"; };
 		7FD2180B1D22445D00533572 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		7FE3D4B71E7A64A900C3E4B6 /* FSAdNetwork-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FSAdNetwork-Resources.bundle"; sourceTree = "<group>"; };
-		7FE3D4B81E7A64A900C3E4B6 /* FSAdNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSAdNetwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				7F82601A1CFFC34E0000E145 /* Social.framework in Frameworks */,
 				7F8260161CFFC33D0000E145 /* WebKit.framework in Frameworks */,
 				7F8260121CFFC31F0000E145 /* AdSupport.framework in Frameworks */,
-				7FE3D4BA1E7A64A900C3E4B6 /* FSAdNetwork.framework in Frameworks */,
+				7FAD83CC1E7A6E6700898DB7 /* FSAdNetwork.framework in Frameworks */,
 				7FC6E2EE1C1041C80087359A /* CoreTelephony.framework in Frameworks */,
 				7FD001921CA906F70095CD1E /* FSAdAnalytics.framework in Frameworks */,
 				7FC6E2EC1C1041C10087359A /* CoreLocation.framework in Frameworks */,
@@ -142,8 +142,8 @@
 		7F8260251CFFC3C40000E145 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				7FE3D4B71E7A64A900C3E4B6 /* FSAdNetwork-Resources.bundle */,
-				7FE3D4B81E7A64A900C3E4B6 /* FSAdNetwork.framework */,
+				7FAD83C91E7A6E6700898DB7 /* FSAdNetwork-Resources.bundle */,
+				7FAD83CA1E7A6E6700898DB7 /* FSAdNetwork.framework */,
 				7F8260231CFFC3940000E145 /* libz.1.2.5.tbd */,
 				7F8260211CFFC3840000E145 /* EventKitUI.framework */,
 				7F82601F1CFFC37C0000E145 /* EventKit.framework */,
@@ -296,7 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE3D4B91E7A64A900C3E4B6 /* FSAdNetwork-Resources.bundle in Resources */,
+				7FAD83CB1E7A6E6700898DB7 /* FSAdNetwork-Resources.bundle in Resources */,
 				7FC6E2DF1C103C110087359A /* LaunchScreen.storyboard in Resources */,
 				7FC6E2DC1C103C110087359A /* Assets.xcassets in Resources */,
 				7FC6E2DA1C103C110087359A /* Main.storyboard in Resources */,
