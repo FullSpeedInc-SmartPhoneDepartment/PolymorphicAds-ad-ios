@@ -1,19 +1,19 @@
 Pod::Spec.new do |s|
   s.name         = "PolymorphicAds-iOS-SDK"
-  s.version      = "2.2.4.2"
+  s.version      = "2.3.0"
   s.summary      = "PolymorphicAds SDK for Objective-c environment"
   s.homepage     = "https://github.com/FullSpeedInc-SmartPhoneDepartment/PolymorphicAds-ad-ios"
   s.license = {
     :type => "Commercial",
     :text => <<-LICENSE
-      (C) Full Speed Inc. ALL RIGHTS RESERVED.
+      (C) Calmbold Inc. ALL RIGHTS RESERVED.
     LICENSE
    }
   s.source = {
       :git => "https://github.com/FullSpeedInc-SmartPhoneDepartment/PolymorphicAds-ad-ios.git",
-      :tag => "2.2.4.2"
+      :tag => "2.3.0"
   }
-  s.author        = "Full Speed Inc."
+  s.author        = "Calmbold Inc."
   s.platform     = :ios
   s.resource  = "FSAdNetwork-Resources.bundle"
   s.vendored_framework  = "FSAdNetwork.framework"
