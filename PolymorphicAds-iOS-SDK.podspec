@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
    }
   s.source = {
       :git => "https://github.com/FullSpeedInc-SmartPhoneDepartment/PolymorphicAds-ad-ios.git",
-      :tag => "2.3.0.1"
+      :tag => "2.3.0.2"
   }
   s.author        = "Calmbold Inc."
   s.platform     = :ios
