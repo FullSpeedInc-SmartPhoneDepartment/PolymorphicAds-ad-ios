@@ -10,4 +10,4 @@
 
 * 2017/12/04 v2.3.2
 
-レクタングル動画のloadAdメソッドとloadAndCreateAdメソッドの動作を修正しました。
+レクタングル動画のloadAdメソッドとloadAndCreateAdメソッドの動作を改善しました。
