@@ -185,7 +185,6 @@
     NSLog(@"%s adUnitId:%@", __func__, adUnitId);
     self.isReady = YES;
     self.msgLabel.text = @"ready";
-    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         BOOL result = [self movieStart];
         if (!result) {
