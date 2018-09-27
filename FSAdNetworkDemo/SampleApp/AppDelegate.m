@@ -27,7 +27,7 @@
     [FSAnalyticsOption debugLogEnable:NO];
     
     // ad unit log enabled
-    [FSAdOption debugLogEnable:NO];
+    [FSAdOption debugLogEnable:YES];
     
     // test mode enabled
     [FSAdOption testModeEnable:YES];
